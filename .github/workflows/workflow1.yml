@@ -2,4 +2,11 @@ name: Simple workflow
 
 on: workflow_dispatch
 
-runs-on: 
+jobs:
+  my_first_job:
+    name: first job
+    runs-on: [self-hosted, anjali]
+    steps:
+      - name: print hello world
+        run: echo "hello world"
+
