@@ -1,0 +1,17 @@
+name: Terraform workflow
+
+on: workflow_dispatch
+
+jobs:
+  my_first_job:
+    name: first job
+    runs-on: [self-hosted, anjali]
+    steps:
+    
+
+    # az login
+    # terraform install
+    # terraform init
+    # terraform plan
+    # terraform apply
+  
