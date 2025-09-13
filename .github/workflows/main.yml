@@ -14,22 +14,8 @@ jobs:
     - name: Azure Login
       uses: Azure/login@v2.3.0
       with:   
-        client-id: ${{ secrets.AZURE_CLIENT_ID }}
-        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          client-id: 797b2efe-6a48-4c3b-b1b1-71b08221e046
+          tenant-id: ee2f7139-4072-4385-99fc-82bd6f563aa6
+          subscription-id: 98b7163f-e961-4b65-98c2-7a6dc2edf5b7
        
      
-    # - name: Azure CLI Login
-    #   uses: azure/login@v2
-    #   with:
-    #     client-id: ${{ secrets.AZURE_CLIENT_ID }}
-    #     tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-    #     subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-    
-
-    # az login
-    # terraform install
-    # terraform init
-    # terraform plan
-    # terraform apply
-  
