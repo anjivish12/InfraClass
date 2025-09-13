@@ -24,12 +24,21 @@ jobs:
     - name: Terraform Init chala
       id: init
       run: terraform init -input=false
-      working-directory: ./parent_module    
+      working-directory: ./parent_module 
 
+    - name: Terraform fmt
+      id: fmt
+      run: terraform fmt
+      working-directory: .
+      
+    - name: Terraform validate kr
+      id: validate
+      run: terraform validate
+      working-directory: ./parent_module 
+      
     - name: Terraform Plan kr
       id: plan
       run: terraform plan -no-color -input=false
-      continue-on-error: true
       working-directory: ./parent_module 
 
     - name: Terraform apply kr
