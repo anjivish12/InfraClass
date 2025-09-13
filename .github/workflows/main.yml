@@ -17,5 +17,9 @@ jobs:
           client-id: 797b2efe-6a48-4c3b-b1b1-71b08221e046
           tenant-id: ee2f7139-4072-4385-99fc-82bd6f563aa6
           subscription-id: 98b7163f-e961-4b65-98c2-7a6dc2edf5b7
+
+    - name: checkout copy repo to runner 
+      uses: actions/checkout@v4
+
        
      
